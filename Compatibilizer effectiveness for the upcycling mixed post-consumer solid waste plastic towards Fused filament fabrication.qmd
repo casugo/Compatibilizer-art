@@ -1,0 +1,194 @@
+---
+title: "Compatibilizer effectiveness for the upcycling post-consumer solid waste plastic towards Fused filament fabrication "
+#format:
+#  docx:
+#    reference-doc: assets/Template.docx
+format: 
+   pdf:
+      documentclass: article
+      toc: false
+      template-partials: 
+      - title.tex
+      include-in-header: 
+      - text: |
+          \usepackage{lineno}
+          \usepackage[noblocks]{authblk}
+          \renewcommand*{\Authsep}{, }
+          \renewcommand*{\Authand}{, }
+          \renewcommand*{\Authands}{, }
+          \renewcommand\Affilfont{\small}
+          \usepackage{setspace}
+          \linenumbers
+      
+author:
+  - name: Catalina Suescun Gonzalez
+    affil-id: [1,3]
+    note: Corresponding author
+  - name: Fabio A. Cruz Sanchez
+    affil-id: 1    
+  - name: Hakim Boudaoud
+    affil-id: 1
+  - name: Joshua Pearce
+    affil-id: 2
+    - name: Sandrine Hoppe
+    affil-id: 3
+  - name: Cécile Nouvel
+    affil-id: 3
+affiliations:
+  - id: 1
+    name: "Université de Lorraine – ERPI – F-54000, Nancy, France"
+   - id: 2
+    name: "Western University, Department of Electrical & Computer Engineering, Canada, London"
+     - id: 3
+    name: "Université de Lorraine, CNRS, LRGP, F-54000 Nancy, France"
+abstract: |
+\doublespacing 
+
+Keywords:
+ -
+ -
+ linestretch: 1.5 
+ fontsize: 12pt
+ geometry:
+    - top=30mm
+    - left=25mm
+    - rigth=25mm 
+    - heightrounded
+Bibliography: [assets/References.bib, Assests/Catalina.bib]
+csl: assets/RCR.csl
+number-sections: true
+colorlinks: true
+link-citations: true 
+linkcolor: blue 
+urlcolor: blue
+citecolor: Blue
+prefer-html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+   fig.width = 9, fig.height = 3.5, fig.retina = 3, fig.align = 'center'
+   out.width = "100%",
+   cache = FALSE,
+   echo = FALSE,
+   message = FALSE,
+   warning = FALSE,
+   fig.show = TRUE,
+   hiline = TRUE,
+   include = TRUE
+)
+library(readxl)
+library(kableExtra)
+library(tidyverse)
+library(flextable)
+set_flextable_defaults(fonts_ignore=TRUE)
+# Link for the Figures
+URL = c()
+```
+
+\setstretch {1}
+\section*{Acronyms}
+```{r}
+   read_excel("tables/tables.xlsx", sheet="Acronyms") %>%
+   arrange(Acronym) %>% 
+   kable(booktabs = T, linesep = "") %>% 
+   kable_styling(font_size = 10, full_width = F, position = "left") %>% 
+   column_spec(1, bold = T, color = "black")
+```
+
+\setstretch{1.5}
+# Introduction
+\linenumbers 
+<!-- Plastic problem -->
+
+Plastics has become an indispensable material for their different applications such beverage packaging, construction, automotive, electrical and electronic equipment owing their exceptional properties [@maris2018a]. Within their unquestionable advantage is the high mechanical strength, low density, low weight, easy processing, and low cost (Mwanza and Mbohwa 2017).However, in the past years the plastic solid waste (PSW) has become one of the mayor sources of contamination causing serious environmental concerns. Although recycling has become the most common strategy used for plastic waste disposal the low waste management has led to alarming cifres where just  26% of the PSW is mechanical recycled, 35.6% used for incineration, 38% restante ends in the landfill and only 0.3% is reused as feedstock material []. Indeed, according to the European strategy for plastics in circular economy [https://ec.europa.eu/environment/circular-economy/pdf/plastics-strategy-brochure.pdf] the reuse and recycling of end-of-life plastics remains very low. This probably a cause of the limitations the waste stream has in terms of heterogeneity, lower properties, regulation that makes the close-loop recycling a complex task.  
+It is well know that the packaging industry generate around 40%  of the plastic waste 
+
+
+
+
+
+# Materials and Methods
+
+## Materials 
+The rPET and rHDPE used in this study come from the Cristaline© water bottle, collected from receptacles placed in engineering schools near the laboratory. Linear SEBS copolymer Kraton 1650 with Brookfield viscosity of 8000 cps at 25°C and 25% of polymer concentration in toluene, linear SEBS copolymer Kraton 1652 with Brookfield viscosity of 1800 cps at same conditions both with ~30% of polystyrene content were kindly donated by Kraton Polymers (Almere, Netherlands) and SEBS Maleated (cirKular+ c1010) ~1.5% of maleic anhydride donated by Univar solutions (France).
+
+## Blending and sample preparation 
+
+Before the blending process, the material transformation into feedstock was performed following the methodology used in previous work[@suescun2023] and compatibilizers were not dried. rPET/rHDPE (90:10 w/w) binary blends, rPET/rHDPE/G1650, rPET/rHDPE/G1652, and rPET/rHDPE/c1010 ternary blends were prepared using two different machines, a co-rotating twin-screw extruder vertical micro-compounder (DSM xplore, Netherlands) and a 3-heat-zone modified open-source FGF printer (Gigabot XL re:3D, Houston, TX, USA). In the ternary blends, the amount of compatibilizer was 10%.  
+Extrusion temperatures for the micro-compounder were 250°C, 260 °C, 260°C and the screw speed was 100rpm, temperature conditions were chosen to ensure melting avoiding degradation of the material. The mean residence time, measured by chronometer, were 1min, 2.2 min and 5 min in order to analyze the influence of the residence time in the compatibilization capacity. The extrudates were injected into the mold by an injection machine at 260°C and mold temperature of 40°C. On the other hand, the ternary blends were directly printed by FGF. The residence time of the machine was experimentally found to be 2.2 min and printing parameters are listed in Table 1.
+
+```{r}
+#| label: table1
+#| tbl-cap: "Main 3-D printing parameters"
+
+library(knitr)
+table_1 <- read_excel("tables/tables.xlsx", sheet="Table1")
+table_1 %>% 
+   kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8) %>% 
+
+```
+
+
+##Characterization Methods
+The injected and printed samples were characterized using different methods,as summarized in table 2. Previous chemical and thermal characterization of net materials was carry out [@suescun2023]
+
+```{r}
+#| label: table1
+#| tbl-cap: "Summary of the samples preparation and characterization test"
+
+library(knitr)
+table_2 <- read_excel("tables/tables.xlsx", sheet="Table2")
+table_2 %>% 
+   kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8) %>% 
+
+```
+### Residence time
+Residence time in the printer was determine experimentally. The resident time was estimated by feeding a small amount of a pink traced directly to the pellets in the rotating screw during a steady state extrusion at a 10 mm/s speed, and measuring the time elapsed until a color change could be visually detected in the nozzle. This process was performed four times to measure the repeatability. 
+
+### Fourier- transform infrared spectroscopy --FTIR--
+
+FTIR was carried out to determine if there was changes in the thernary blends composition and the compatibilizers effects in a molecular size.
+The analysis was made on binary and thernary blends to observe a chemical bonding.Every sample was measured ... curves were normalized and analysed with the Origing Pro 8. The Fourier transfom infrared spectra have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance using Bruker IFS 66 spectrophotometer.
+
+### Thermal characterization 
+Thermal properties were measured ussing differential scanning calometry and thermogravimetric analysis as presented below.
+
+#### Modulated Differential scanning calorimetry --mDSC-
+
+   Modulated differential scanning calorimetry analysis were performed with a... operating under air atmosphere at heating rate of $10~°C/min$ and cooling rate $5~°C/min$ \pm 1. For printed and injected samples, a small section was cut from the tensile bar. Net polymers, binary and thernary blends were evaluated using three cycles: first heating from 20°C to 300 °C, cooling to 20°C and reheating to 300°C for rPET. The rHDPE sample was analyzed following similar cycles but with the minimum temperature set at -70 °C and maximum temperature set at 210°C. finally, for the binary and ternary blends with temperatures from -70 to 300°C.
+   The first heating was made to erase the thermal history of the sample. The measurements of net materials correspond to the secong melting curve while for blends the first melting curve. 
+The degree of crystallinity (Xc) was calculated from the area under the melting peaks as expressed in equation (1) [@taghavi2018; @pan2020]:
+
+$$
+X_{c}(\%) = \frac{\Delta H_{m}}{w \cdot \Delta H_{m}^\circ}
+$$ {#eq-dsc}
+
+Where, $\Delta H_{m}$ is the latent heat of melt, $w$ is weight percentage of polymer in the blend, and $\Delta H_{m}^\circ$ is the reference heat of 100% crystalline PET ($140~J/g$) and HDPE ($293~J/g$), respectively, provided in the literature [@pan2020; @kratofil2006].
+
+#### Thermogravimetric analysis --TGA--
+
+Thermogravimetric analysis of a small section cut from the charpy bar were performed in a TGA/DSC Mettler Toledo with STARe software to determine the degradation temperature of the materials. The samples were heated from 20°C to 500°C at a rate of $10~°C/min$ under air, then hold at 500 for 58 min.
+
+### Rehology 
+
+The oscillatory flow measurements of complex viscosity, the storage modulus and the loss modulus of injected and printed rPET, rHDPE, and rPET90//rHDPE10 with and without compatibilization were determined in a Rheometer TA Ares system using parallel plate geometry (d=25mm, Gap=1mm) for frequencies ranging from 100 to 0.1 Hz under air atmosphere at 270°C [@kimEffectFunctionalGroup1997] for all samples and  HDPE at 170°C [@escocioRheologicalBehaviorRenewable2015.
+
+### Mechanical characterization
+
+####Tensil test 
+
+binary and thernary blends tested for tensile properties according to the ISO 527-1 standard on type 1B with a Zwick/Roell 1476 machine (L.Schreiner, Germany ) load cell with capacity of 100kN. Measurements were carry out on five different specimens for each formulation with a load speed of 10mm/s. 
+
+###Charpy test 
+
+Printed and injected specimens were tested for impact properties according the ISO 179-1 standard on specimen 1eAb in a Instron ceast 9050 instrumented impact hammer 7.5J. Measurements were carry out on ten different specimens for each formulation chosen.
+
+### Scanning electron microscope
+
+Previous of the 
+
+
+
+
+

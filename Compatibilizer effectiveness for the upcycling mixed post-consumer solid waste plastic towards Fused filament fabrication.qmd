@@ -1,13 +1,9 @@
 ---
 title: "Compatibilizer effectiveness for the upcycling post-consumer solid waste plastic towards Fused filament fabrication "
-#format:
-#  docx:
-#    reference-doc: assets/Template.docx
-format: 
-   pdf:
-      documentclass: article
-      toc: false
-      template-partials: 
+format:
+  docx:
+    reference-doc: assets/Template.docx
+
       - title.tex
       include-in-header: 
       - text: |
@@ -30,44 +26,41 @@ author:
     affil-id: 1
   - name: Joshua Pearce
     affil-id: 2
-    - name: Sandrine Hoppe
+  - name: Sandrine Hoppe
     affil-id: 3
   - name: Cécile Nouvel
     affil-id: 3
 affiliations:
   - id: 1
     name: "Université de Lorraine – ERPI – F-54000, Nancy, France"
-   - id: 2
+  - id: 2
     name: "Western University, Department of Electrical & Computer Engineering, Canada, London"
-     - id: 3
+  - id: 3
     name: "Université de Lorraine, CNRS, LRGP, F-54000 Nancy, France"
 abstract: |
-\doublespacing 
-
-Keywords:
- -
- -
- linestretch: 1.5 
- fontsize: 12pt
- geometry:
-    - top=30mm
-    - left=25mm
-    - rigth=25mm 
-    - heightrounded
-Bibliography: [assets/References.bib, Assests/Catalina.bib]
+ \doublespacing The recycled polymer blends based on recycled poly (ethylene terephthalate) (rPET) and high density polyethylene (HDPE) at 90/10 wt% with and without 10% of three type of SEBS (G-1650,G1652; C1010) was prepared in a co-rotating twin screw extruder and Fused Granular Filament printer. The effects of adding 10% SEBS  and the blend characterization of both processes are showed. 
+ 
+linestretch: 1.5
+fontsize: 12pt
+geometry:
+  - top=30mm
+  - left=25mm
+  - right=25mm
+  - heightrounded
+bibliography: [assets/References.bib, assets/Catalina.bib]
 csl: assets/RCR.csl
-number-sections: true
+number-sections: false
 colorlinks: true
-link-citations: true 
-linkcolor: blue 
-urlcolor: blue
+link-citations: true
+linkcolor: Blue
+urlcolor: Blue
 citecolor: Blue
 prefer-html: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-   fig.width = 9, fig.height = 3.5, fig.retina = 3, fig.align = 'center'
+   fig.width = 9, fig.height = 3.5, fig.retina = 3, fig.align = 'center',
    out.width = "100%",
    cache = FALSE,
    echo = FALSE,
@@ -140,8 +133,7 @@ The injected and printed samples were characterized using different methods,as s
 library(knitr)
 table_2 <- read_excel("tables/tables.xlsx", sheet="Table2")
 table_2 %>% 
-   kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8) %>% 
-
+   kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8)
 ```
 ### Residence time
 Residence time in the printer was determine experimentally. The resident time was estimated by feeding a small amount of a pink traced directly to the pellets in the rotating screw during a steady state extrusion at a 10 mm/s speed, and measuring the time elapsed until a color change could be visually detected in the nozzle. This process was performed four times to measure the repeatability. 
@@ -186,9 +178,33 @@ Printed and injected specimens were tested for impact properties according the I
 
 ### Scanning electron microscope
 
-Previous of the 
+In order to gain a more comprehensive understanding of the morphological characteristics of the blend, samples underwent a Soxhlet extraction test to isolate the minor phase (High-Density Polyethylene, HDPE) within the blend. Samples intended for Charpy impact testing were fractured under cryogenic conditions using liquid nitrogen, followed by dissolution in Xylene for a period of 14 hours at a temperature approximately 380°C. To facilitate enhanced observation, these samples were further prepared by sputter-coating with a thin layer of platinum. The examination of the samples was conducted using scanning electron microscopy equipment, specifically the Hitachi model SU1000, with an operating acceleration voltage of 5 kV.
+
+Quantitative analysis of the obtained images was performed using ImageJ software to assess the homogenisation of the blend."
+
+# Results and discussion 
+## Chemical analysis from FTIR
+## Thermal analysis mDSC
+## Thermal analysis TGA
+## Rehology 
+## Mechanical analysis Tensile test 
+## Mechanical analysis Charpy test 
+## Morphology analysis SEM
+
+#conclusion and future work
+
+# Declaration of competing {.unnumbered}
+
+The authors declare that they have no known competing financial interest or personal relationships that could have appeared to influence the work reported in this paper.
+
+# Acknowledgements {.unnumbered}
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation program under the grant agreement No 869952.
+The authors thank the LUE program for the financing of the thesis, the Lorraine Fab Living lab platform and the Thompson endowment.
 
 
+\newpage
 
+# References {.unnumbered}
 
 

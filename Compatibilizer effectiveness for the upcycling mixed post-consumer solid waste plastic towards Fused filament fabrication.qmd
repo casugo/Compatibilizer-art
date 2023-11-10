@@ -170,7 +170,7 @@ The oscillatory flow measurements of complex viscosity, the storage modulus and 
 
 ####Tensil test 
 
-binary and thernary blends tested for tensile properties according to the ISO 527-1 standard on type 1B with a Zwick/Roell 1476 machine (L.Schreiner, Germany ) load cell with capacity of 100kN. Measurements were carry out on five different specimens for each formulation with a load speed of 10mm/s. 
+Binary and ternary blends tested for tensile properties according to the ISO 527-1 standard on type 1B with a Zwick/Roell 1476 machine (L.Schreiner, Germany ) load cell with capacity of 100kN. Measurements were carry out on five different specimens for each formulation with a load speed of 10mm/s. 
 
 ###Charpy test 
 
@@ -180,7 +180,7 @@ Printed and injected specimens were tested for impact properties according the I
 
 In order to gain a more comprehensive understanding of the morphological characteristics of the blend, samples underwent a Soxhlet extraction test to isolate the minor phase (High-Density Polyethylene, HDPE) within the blend. Samples intended for Charpy impact testing were fractured under cryogenic conditions using liquid nitrogen, followed by dissolution in Xylene for a period of 14 hours at a temperature approximately 380°C. To facilitate enhanced observation, these samples were further prepared by sputter-coating with a thin layer of platinum. The examination of the samples was conducted using scanning electron microscopy equipment, specifically the Hitachi model SU1000, with an operating acceleration voltage of 5 kV.
 
-Quantitative analysis of the obtained images was performed using ImageJ software to assess the homogenisation of the blend."
+Quantitative analysis of the obtained images was performed using ImageJ software to assess the homogenisation of the blend.
 
 # Results and discussion 
 ## Chemical analysis from FTIR

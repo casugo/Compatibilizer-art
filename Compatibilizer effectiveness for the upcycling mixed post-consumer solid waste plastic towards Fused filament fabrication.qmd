@@ -1,20 +1,26 @@
 ---
-title: "Compatibilizer effectiveness for the upcycling post-consumer solid waste plastic towards Fused filament fabrication "
+title: "Compatibilizer effectiveness for the reuse of mixed post-consumer solid waste plastic towards Distributed recycling additive manufacturing"
 format:
-  docx:
+   docx:
+    toc: false
+    number-sections: false
+    highlight-style: github
+    linkcolor: blue
+    urlcolor: blue
+    link-citations: true
     reference-doc: assets/Template.docx
+  # pdf:
+  #   documentclass: article
+  #   geometry:
+  #     - top=30mm
+  #     - left=25mm
+  #     - right=25mm
+  #     - heightrounded
+  #   include-in-header:
+  #     file: assets/packages.tex
+  #   template-partials:
+  #     - title.tex
 
-      - title.tex
-      include-in-header: 
-      - text: |
-          \usepackage{lineno}
-          \usepackage[noblocks]{authblk}
-          \renewcommand*{\Authsep}{, }
-          \renewcommand*{\Authand}{, }
-          \renewcommand*{\Authands}{, }
-          \renewcommand\Affilfont{\small}
-          \usepackage{setspace}
-          \linenumbers
       
 author:
   - name: Catalina Suescun Gonzalez
@@ -38,7 +44,7 @@ affiliations:
   - id: 3
     name: "Université de Lorraine, CNRS, LRGP, F-54000 Nancy, France"
 abstract: |
- \doublespacing The recycled polymer blends based on recycled poly (ethylene terephthalate) (rPET) and high density polyethylene (HDPE) at 90/10 wt% with and without 10% of three type of SEBS (G-1650,G1652; C1010) was prepared in a co-rotating twin screw extruder and Fused Granular Filament printer. The effects of adding 10% SEBS  and the blend characterization of both processes are showed. 
+ \doublespacing In the realm of recycling, the concept of bypassing the sorting process has emerged as an intriguing solution to circumvent the high costs and inherent inefficiencies of this process.This has necessitated the blend of polymers with compatiblizers exploring novel approaches to do so. In this study, the recycled polymer blends based on recycled poly (ethylene terephthalate) (rPET) and high density polyethylene (HDPE) at 90/10 wt% with and without 10% of three type of SEBS (G-1650,G1652; C1010) was prepared in a co-rotating twin screw extruder and Fused Granular Filament printer. The effects of adding 10% SEBS and the blend characterization of both processes are showed. 
  
 linestretch: 1.5
 fontsize: 12pt
@@ -92,24 +98,41 @@ URL = c()
 \setstretch{1.5}
 # Introduction
 \linenumbers 
-<!-- Plastic problem -->
 
-Plastics has become an indispensable material for their different applications such beverage packaging, construction, automotive, electrical and electronic equipment owing their exceptional properties [@maris2018a]. Within their unquestionable advantage is the high mechanical strength, low density, low weight, easy processing, and low cost (Mwanza and Mbohwa 2017).However, in the past years the plastic solid waste (PSW) has become one of the mayor sources of contamination causing serious environmental concerns. Although recycling has become the most common strategy used for plastic waste disposal the low waste management has led to alarming cifres where just  26% of the PSW is mechanical recycled, 35.6% used for incineration, 38% restante ends in the landfill and only 0.3% is reused as feedstock material []. Indeed, according to the European strategy for plastics in circular economy [https://ec.europa.eu/environment/circular-economy/pdf/plastics-strategy-brochure.pdf] the reuse and recycling of end-of-life plastics remains very low. This probably a cause of the limitations the waste stream has in terms of heterogeneity, lower properties, regulation that makes the close-loop recycling a complex task.  
-It is well know that the packaging industry generate around 40%  of the plastic waste 
+<!-- Plastic advantage and  problem -->
+
+Plastics have become an indispensable material for a wide range of applications, including beverage packaging, construction, automotive, electrical and electronic equipment, due to their exceptional properties [@maris2018a]. They offer unquestionable advantages such as high mechanical strength, low density, lightweight nature, ease of processing, and cost-effectiveness [[@Mwanza, @Mbohwa 2017]. However PSW has emerged as a major source of contamination, causing environmental concerns[@fomina2021b]. The packaging industry is particularly responsible for generating approximately 40% of the plastic waste [@balwada2021]. Remarkably, polymers such as PE, PP, and PET collectively comprise over 90% of all packaging, solidifying their position as the most extensively employed polymers within this sector. [@Geyer2021]. Although, recycling has become the predominant method for plastic waste disposal, inadequate waste management has resulted in alarming statistics. In European countries, only 32.5% of plastic is recycled, 42.6% incinerated for energy recovery, and 24.9% ends up in landfills, according to the European Parliament [European Parliament]. The situation is even more concerning in India, where a staggering 80% of plastic waste is consigned to landfills, 8% is incinerated, and only 7% is recycled [@singh2017]. The challenges encountered in plastic recycling, can be attributed to a shortage of collection infrastructure, the complexity of effectively sorting various plastic types, the high costs, and time-consuming nature of collecting and processing plastic waste [@kassab2023] [@ghosh2021]. Additionally, recycled plastics often exhibit suboptimal quality, characterized by inconsistent coloration and diminished structural strength [@kassab2023].
+
+<!-- Compatibilization solution -->
+
+In recent years, there has been a growing interest in recycling plastics without prior sorting as an appealing alternative to mitigate the associated cost [@mbarek2009]. One example of this trend is the initiative in Europe, which encourages keeping the bottle and cap together. Nevertheless, a primary obstacle to the successful blending of different plastics lies in their inherently lower interphase tension and lack of chemical compatibility, resulting in low-quality materials. To addres this issue, one potential strategy is to incorporate additives called compatibilizers  during the melting process. These compatibilizers facilitate  interaction between the phases of two  immiscible polymers, stabilize the morphology by reducing the drop size in the dispersed phase, and enhance the physicomechanical properties of the mixture [@fomina2021b].  Traditional methods for achieving compatibilization involve adding small quantities of components, such as  block or graft copolymers, fillers and coupling agents. This can be accomplished through either a chemical or physical process [@Maris2018]. Reactive compatibilizer establish effective connections between polymers via reactive extrusion, while the physical dispersion of the copolymer segment in the phases of the mix improves the inter-facial adhesion [@Nechifor2018]. 
+
+Extensive analysis has been conducted on the compatibilization of different plastic waste.  Non-reactive block copolymers such as EPDM and EPM have been employed to facilitate the compatibilzation of recycled PP/PE [@bertin2002, @fang2013 @yousefi1998].  [@fortelny2004] demonstrated the effectiveness of combining these block copolymers with BS in PE/PP/PS blends, resulting in waste materials with comparable toughness to their virgin counterparts. Another  commonly investigated  block copolymer is SEBS, which hasshown remarkable efficacy in improving the properties of immiscible blends such as  HDPE/PP [@mural2011], PP/HIPS [@santana2003], and  PET/HDPE [@Iniguez2000].  [@zhang2009 @zhang2007]  conducted research showing  that the incorporation of SEBS results in a more stable and uniform morphology within the blend, while significantly enhancing the ductility of the blend when PET is combined with LDPE. Additionally, [@inoya2012a] demonstrated that the addition of 1phr  SEBS  improved the impact strength of unnotched specimens by 2.7 times  and allowed  for a reduction in drop size of approximately 50%  in blends composed of 95% rPET and 5% PP. These findings highlight the advantageous effects of SEBS as a compatibilizer in this context 
+
+Reactive compatibilizers are  functional groups that are chemically  grafted onto polyolefins or the polymer  used in the blend. This allows the copolymer to interact with one of the phases while simultaneously reacting with the other.  These interactions result in the formation of covalent bonds, facilitated by coupling agents such as peroxide, anhydride, isocyanate and oxazoline [@ghosh202]. In the waste stream MA and GMA are commonly employed due to their compatibility with hydroxyl, carboxyl and amine functional groups [@Maris2018, @Nechifor201]. In the case of MA, it has found utillity  in grafting with various polyolefins and block copolymers, resulting in notable improvements in the mechanical properties, morphology, and rheology of blends including rABS/rPC  [@farzadfar2014],  rPA6/rPP [@hong2006, miskolczi2013], rPP/Nylon [@kim2007], and rHDPE/rPP [@atiqah2014,@fang2013a,@atiqah2015a]. Furthermore, MA has displayed effectiveness in the compatibilization of rPET with other  PSW materials, showcasting the ability to react with hydroxyl ends on PET [@Lei2009, @zander2019, @shahrajabi2019, @zhidan2011, @hellati2010, @akshaya2020, @santos2022]. On the other hand, GMA  has been  used in the compatibilization of rPET and rHDPE [@salleh2013, @akkapeddi1995, @adekunler2020] and has demonstrated greater efficiency than MA, as it can react with both carboxyl and hydroxyl ends of PET[@chen2014, @pluta2001] 
 
 
+<!-- Blending methodology-->
 
+Two commonly used techniques are employed for the compatibilization of plastic waste. The first method involves mixing various polymers with a compatibilizer using a batch mixer[@pracella2004, @araujo2018, @dobrovszkyI2016]. The resulting blend is then processed through compression molding to create test specimens. The second technique involves using an extruder to homogenize the plastic waste blend, which is subsequently injection-molded to form desired products [@Martis (2018)] . Commonly, single and double screw compounders are used for this purpose [@zhu2015, @oyman2003, @razavi2011, @kayaisang2009]. However, the utilization of direct material extrusion 3D printing for this purpose is still in its infancy. While there has been some exploration in blending recycled materials via large-scale direct 3D printing [@netto2022, @romani2023, @domingues2017], the use of compatibilizers and their efficiency  in this context remains largely uninvestigated. 
+
+<!-- purpose of the study-->
+
+The primary objectives of this study are to conduct a comparative analysis and evaluation of three  SEBS-based compatibilizers with two facilitating  physical compatibilization and one promoting reactive compatibilization. Additionally, the study aims to contribute to our understanding of  the feasibility of large-scale 3D printing, specifically FGF, as a novel methodology for  blending and compatibilizing PSW without prior sorting comparing with the conventional method of twin screw extrusion. Furthermore,  this research will contribute to the advancement of the distributed recycling additive manufacturing approach and the development of more durable and compatible materials for 3D printing applications.
+
+In the context of this research, a fully  recycled water bottle was employed as a representative model. The bottle consisted of PET for the body and HDPE for the cap without  prior separation. Binary and ternary blends were then extensively analyzed  for mechanical, chemical, thermal, morphological, and rheological characterization
 
 
 # Materials and Methods
 
 ## Materials 
-The rPET and rHDPE used in this study come from the Cristaline© water bottle, collected from receptacles placed in engineering schools near the laboratory. Linear SEBS copolymer Kraton 1650 with Brookfield viscosity of 8000 cps at 25°C and 25% of polymer concentration in toluene, linear SEBS copolymer Kraton 1652 with Brookfield viscosity of 1800 cps at same conditions both with ~30% of polystyrene content were kindly donated by Kraton Polymers (Almere, Netherlands) and SEBS Maleated (cirKular+ c1010) ~1.5% of maleic anhydride donated by Univar solutions (France).
+In this study, we used post-consumers Cristaline© water bottle composed of 90% PET (body) and 10% (cap) of HDPE , collected from receptacles placed in engineering schools near the laboratory. Linear SEBS copolymer Kraton G-1650 with Brookfield viscosity of 8000 cps at 25°C and 25% of polymer concentration in toluene, linear SEBS copolymer Kraton G-1652 with Brookfield viscosity of 1800 cps at same conditions both with ~30% of polystyrene content were kindly donated by Kraton Polymers (Almere, Netherlands) and SEBS Maleated (cirKular+ c1010) ~1.5% of maleic anhydride donated by Univar solutions (France).
 
 ## Blending and sample preparation 
 
-Before the blending process, the material transformation into feedstock was performed following the methodology used in previous work[@suescun2023] and compatibilizers were not dried. rPET/rHDPE (90:10 w/w) binary blends, rPET/rHDPE/G1650, rPET/rHDPE/G1652, and rPET/rHDPE/c1010 ternary blends were prepared using two different machines, a co-rotating twin-screw extruder vertical micro-compounder (DSM xplore, Netherlands) and a 3-heat-zone modified open-source FGF printer (Gigabot XL re:3D, Houston, TX, USA). In the ternary blends, the amount of compatibilizer was 10%.  
-Extrusion temperatures for the micro-compounder were 250°C, 260 °C, 260°C and the screw speed was 100rpm, temperature conditions were chosen to ensure melting avoiding degradation of the material. The mean residence time, measured by chronometer, were 1min, 2.2 min and 5 min in order to analyze the influence of the residence time in the compatibilization capacity. The extrudates were injected into the mold by an injection machine at 260°C and mold temperature of 40°C. On the other hand, the ternary blends were directly printed by FGF. The residence time of the machine was experimentally found to be 2.2 min and printing parameters are listed in Table 1.
+Prior to the blending process, the material transformation into feedstock followed the methodology used in previous research. It's notworthy that compatibilizers were not subject to drying process.  Binary blends consistinf of rPET/rHDPE (90:10 w/w) and ternary blends involving  rPET/rHDPE/G1650, rPET/rHDPE/G1652 , and rPET/rHDPE/c1010 were prepared using two distinct machines. The co-rotating twin-screw extruder vertical micro-compounder (DSM xplore, Netherlands) and a modified open-source FGF printer with three heat zones (Gigabot XL re:3D, Houston, TX, USA) were employed for this purpose. In the ternary blends, the quantity of compatibilizer utilized was 10%.
+
+For the micro-compounder, the extrusion temperatures were set at 250°C, 260°C, and 260°C, while the screw speed was maintained at 100 rpm. These temperature conditions were selected to ensure material melting without causing degradation. The passage through the extruder time was carefully measured using a chronometer and was set at 1 minute, 2.2 minutes, and 5 minutes to explore the impact of residence time on the compatibilization process. Subsequently, the extrudates were injected into the mold by an injection machine operating at 260°C, with the mold temperature held at 40°C.  Conversely, the ternary blends were directly produced through Fused Granular Fabrication (FGF) printing. The residence time during extrusion within the machine was experimentally determined to be 2.2 minutes. Detailed printing parameters can be found in Table 1 for reference
 
 ```{r}
 #| label: table1
@@ -122,9 +145,9 @@ table_1 %>%
 
 ```
 
-
 ##Characterization Methods
-The injected and printed samples were characterized using different methods,as summarized in table 2. Previous chemical and thermal characterization of net materials was carry out [@suescun2023]
+
+The injected and printed samples were characterized using different methods, as summarized in table 2. Previos chemical and thermal characterization of net materials was carry out.
 
 ```{r}
 #| label: table1
@@ -135,20 +158,26 @@ table_2 <- read_excel("tables/tables.xlsx", sheet="Table2")
 table_2 %>% 
    kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8)
 ```
-### Residence time
-Residence time in the printer was determine experimentally. The resident time was estimated by feeding a small amount of a pink traced directly to the pellets in the rotating screw during a steady state extrusion at a 10 mm/s speed, and measuring the time elapsed until a color change could be visually detected in the nozzle. This process was performed four times to measure the repeatability. 
+### Residence time estimation 
 
-### Fourier- transform infrared spectroscopy --FTIR--
+The residence time of the material within the printer's extruder was determined experimentally. To calculate the residence time, a small quantity of pink tracer was introduced directly into the flakes within the rotating screw during a steady-state extrusion process at a speed of 10 mm/s. The time elapsed before a noticeable color change occurred at the nozzle was carefully recorded. This procedure was conducted four times to evaluate its reproducibility and consistency. 
 
-FTIR was carried out to determine if there was changes in the thernary blends composition and the compatibilizers effects in a molecular size.
-The analysis was made on binary and thernary blends to observe a chemical bonding.Every sample was measured ... curves were normalized and analysed with the Origing Pro 8. The Fourier transfom infrared spectra have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance using Bruker IFS 66 spectrophotometer.
+### Mechanical characterization 
 
-### Thermal characterization 
-Thermal properties were measured ussing differential scanning calometry and thermogravimetric analysis as presented below.
+#### Tensil test 
 
-#### Modulated Differential scanning calorimetry --mDSC-
+Binary and ternary blends tested for tensile properties according to the ISO 527-1 standard on type 1B with a Zwick/Roell 1476 machine (L.Schreiner, Germany ) load cell with capacity of 100kN. Measurements were carry out on five different specimens for each formulation with a load speed of 10mm/s. After testing, the mean values and standar error of stress, strain, and elastic modulus were calculated from stress-strain curves obtained in the test ans analyzed using Excel and Origing Pro8. 
 
-   Modulated differential scanning calorimetry analysis were performed with a... operating under air atmosphere at heating rate of $10~°C/min$ and cooling rate $5~°C/min$ \pm 1. For printed and injected samples, a small section was cut from the tensile bar. Net polymers, binary and thernary blends were evaluated using three cycles: first heating from 20°C to 300 °C, cooling to 20°C and reheating to 300°C for rPET. The rHDPE sample was analyzed following similar cycles but with the minimum temperature set at -70 °C and maximum temperature set at 210°C. finally, for the binary and ternary blends with temperatures from -70 to 300°C.
+#### Charpy test 
+
+Printed and injected specimens were tested for impact properties according the ISO 179-1 standard on specimen 1eAb in a Instron ceast 9050 instrumented impact hammer 7.5J. Measurements were carry out on ten different specimens for each formulation chosen. Results were analysed using excel and Origing Pro8
+### Fourier-transform infrared spectroscopy --FTIR--
+
+A Bruker IFS 66 spectrophotometer was used for IR measurement. Each spectrum have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance. Baseline correction, and normalitation were carried out in the softawere OrigingPro  8.
+
+### Modulated Differential scanning calorimetry --mDSC--
+
+  Modulated differential scanning calorimetry analysis were performed with a... operating under air atmosphere at heating rate of $10~°C/min$ and cooling rate $5~°C/min \pm1. For printed and injected samples, a small section was cut from the tensile bar. Net polymers, binary and thernary blends were evaluated using three cycles: first heating from 20°C to 300 °C, cooling to 20°C and reheating to 300°C for rPET. The rHDPE sample was analyzed following similar cycles but with the minimum temperature set at -70 °C and maximum temperature set at 210°C. finally, for the binary and ternary blends with temperatures from -70 to 300°C.
    The first heating was made to erase the thermal history of the sample. The measurements of net materials correspond to the secong melting curve while for blends the first melting curve. 
 The degree of crystallinity (Xc) was calculated from the area under the melting peaks as expressed in equation (1) [@taghavi2018; @pan2020]:
 
@@ -158,40 +187,38 @@ $$ {#eq-dsc}
 
 Where, $\Delta H_{m}$ is the latent heat of melt, $w$ is weight percentage of polymer in the blend, and $\Delta H_{m}^\circ$ is the reference heat of 100% crystalline PET ($140~J/g$) and HDPE ($293~J/g$), respectively, provided in the literature [@pan2020; @kratofil2006].
 
-#### Thermogravimetric analysis --TGA--
+### Thermogravimetric analysis --TGA--
 
 Thermogravimetric analysis of a small section cut from the charpy bar were performed in a TGA/DSC Mettler Toledo with STARe software to determine the degradation temperature of the materials. The samples were heated from 20°C to 500°C at a rate of $10~°C/min$ under air, then hold at 500 for 58 min.
 
-### Rehology 
+### Rheology 
 
-The oscillatory flow measurements of complex viscosity, the storage modulus and the loss modulus of injected and printed rPET, rHDPE, and rPET90//rHDPE10 with and without compatibilization were determined in a Rheometer TA Ares system using parallel plate geometry (d=25mm, Gap=1mm) for frequencies ranging from 100 to 0.1 Hz under air atmosphere at 270°C [@kimEffectFunctionalGroup1997] for all samples and  HDPE at 170°C [@escocioRheologicalBehaviorRenewable2015.
+The oscillatory flow measurements of complex viscosity, the storage modulus and the loss modulus of injected and printed rPET, rHDPE, and rPET90//rHDPE10 with and without compatibilization were determined in a Rheometer TA Ares system using parallel plate geometry (d=25mm, Gap=1mm) for frequencies ranging from 100 to 0.1 Hz under air atmosphere at 270°C [@kimEffectFunctionalGroup1997] for all samples and  HDPE at 170°C [@escocioRheologicalBehaviorRenewable2015].
 
-### Mechanical characterization
+### Scanning electron microscope --SEM--
 
-####Tensil test 
+In order to gain a more comprehensive understanding of the morphological characteristics of the blend, samples underwent a Soxhlet extraction test to isolate the minor phase (High-Density Polyethylene, HDPE) within the blend. Samples intended for Charpy impact testing were fractured under cryogenic conditions using liquid nitrogen, followed by dissolution in Xylene for a period of 14 hours at a temperature approximately 380°C. To facilitate enhanced observation, these samples were further prepared by sputter-coating with a thin layer of platinum. The examination of the samples was conducted using scanning electron microscopy equipment (Hitachi model SU1000), with an operating acceleration voltage of 5 kV.
 
-Binary and ternary blends tested for tensile properties according to the ISO 527-1 standard on type 1B with a Zwick/Roell 1476 machine (L.Schreiner, Germany ) load cell with capacity of 100kN. Measurements were carry out on five different specimens for each formulation with a load speed of 10mm/s. 
-
-###Charpy test 
-
-Printed and injected specimens were tested for impact properties according the ISO 179-1 standard on specimen 1eAb in a Instron ceast 9050 instrumented impact hammer 7.5J. Measurements were carry out on ten different specimens for each formulation chosen.
-
-### Scanning electron microscope
-
-In order to gain a more comprehensive understanding of the morphological characteristics of the blend, samples underwent a Soxhlet extraction test to isolate the minor phase (High-Density Polyethylene, HDPE) within the blend. Samples intended for Charpy impact testing were fractured under cryogenic conditions using liquid nitrogen, followed by dissolution in Xylene for a period of 14 hours at a temperature approximately 380°C. To facilitate enhanced observation, these samples were further prepared by sputter-coating with a thin layer of platinum. The examination of the samples was conducted using scanning electron microscopy equipment, specifically the Hitachi model SU1000, with an operating acceleration voltage of 5 kV.
-
-Quantitative analysis of the obtained images was performed using ImageJ software to assess the homogenisation of the blend.
+Quantitative analysis of the obtained images was performed using python software to assess the homogenization of the blend.
 
 # Results and discussion 
-## Chemical analysis from FTIR
-## Thermal analysis mDSC
-## Thermal analysis TGA
+The results and discussion section are organized as follow: first a macroscopic analysis of the mechanical properties of the blends followed by a microscopic evaluation. 
+## Mechanical analysis --Tensile test-- 
+## Mechanical analysis --Charpy test-- 
+## Chemical analysis --FTIR--
+## Thermal analysis -- mDSC--
+## Thermal analysis --TGA--
 ## Rehology 
-## Mechanical analysis Tensile test 
-## Mechanical analysis Charpy test 
-## Morphology analysis SEM
+## Morphology analysis --SEM--
 
 #conclusion and future work
+
+This study reflects the importance of use compatibilizers in the direct printing process to determinate the feasibility and scalability of this approach enhance the mechanical properties of the blend material and lowering its interphase tension. 
+
+To further advance the use of compatibilizers in 3D printing with recycled plastics, researchers may need to explore different types of compatibilizers, evaluate their effects on the properties of printed objects, and develop guidelines for optimizing the recycling and printing process. Additionally, as this technology evolves, it will be important to conduct more studies to assess the environmental impact and cost-effectiveness of these methods.
+The challenges in using compatibilizers for 3D printing with recycled plastics include ensuring good adhesion between layers, preventing degradation of the materials during extrusion and printing, and optimizing the mechanical properties of the final printed objects. Research in this area is ongoing as the 3D printing industry seeks more sustainable and eco-friendly materials for additive manufacturing.
+
+The use of FGF for upcycling solid waste plastic is an interesting method, as it suggests a potential solution to the plastic accumulation in landfills and environment.
 
 # Declaration of competing {.unnumbered}
 

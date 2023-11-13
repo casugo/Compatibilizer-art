@@ -24,8 +24,8 @@ format:
       
 author:
   - name: Catalina Suescun Gonzalez
-    affil-id: [1,3]
-    note: Corresponding author
+    corresponding: true
+    affil-id: 1,2,3
   - name: Fabio A. Cruz Sanchez
     affil-id: 1    
   - name: Hakim Boudaoud

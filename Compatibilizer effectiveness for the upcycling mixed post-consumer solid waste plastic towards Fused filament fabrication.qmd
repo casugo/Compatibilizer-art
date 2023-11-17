@@ -126,11 +126,11 @@ In the context of this research, a fully  recycled water bottle was employed as 
 # Materials and Methods
 
 ## Materials 
-In this study, we used post-consumers Cristaline© water bottle composed of 90% PET (body) and 10% (cap) of HDPE , collected from receptacles placed in engineering schools near the laboratory. Linear SEBS copolymer Kraton G-1650 with Brookfield viscosity of 8000 cps at 25°C and 25% of polymer concentration in toluene, linear SEBS copolymer Kraton G-1652 with Brookfield viscosity of 1800 cps at same conditions both with ~30% of polystyrene content were kindly donated by Kraton Polymers (Almere, Netherlands) and SEBS Maleated (cirKular+ c1010) ~1.5% of maleic anhydride donated by Univar solutions (France).
+In this study, we used post-consumers Cristaline© water bottle composed of 90% PET (body) and 10% (cap) of HDPE, collected from receptacles placed in engineering schools near the laboratory. Linear SEBS copolymer Kraton G-1650 with Brookfield viscosity of 8000 cps at 25°C and 25% of polymer concentration in toluene, linear SEBS copolymer Kraton G-1652 with Brookfield viscosity of 1800 cps at same conditions both with ~30% of polystyrene content were kindly donated by Kraton Polymers (Almere, Netherlands) and SEBS Maleated (cirKular+ c1010) ~1.5% of maleic anhydride donated by Univar solutions (France).
 
 ## Blending and sample preparation 
 
-Prior to the blending process, the material transformation into feedstock followed the methodology used in previous research. It's notworthy that compatibilizers were not subject to drying process.  Binary blends consistinf of rPET/rHDPE (90:10 w/w) and ternary blends involving  rPET/rHDPE/G1650, rPET/rHDPE/G1652 , and rPET/rHDPE/c1010 were prepared using two distinct machines. The co-rotating twin-screw extruder vertical micro-compounder (DSM xplore, Netherlands) and a modified open-source FGF printer with three heat zones (Gigabot XL re:3D, Houston, TX, USA) were employed for this purpose. In the ternary blends, the quantity of compatibilizer utilized was 10%.
+Prior to the blending process, the material transformation into feedstock followed the methodology used in previous research. It's noteworthy that compatibilizers were not subject to drying process. Binary blends consisting of rPET/rHDPE (90:10 w/w) and ternary blends involving  rPET/rHDPE/G1650, rPET/rHDPE/G1652 , and rPET/rHDPE/c1010 were prepared using two distinct machines. The co-rotating twin-screw extruder vertical micro-compounder (DSM xplore, Netherlands) and a modified open-source FGF printer with three heat zones (Gigabot XL re:3D, Houston, TX, USA) were employed for this purpose. In the ternary blends, the quantity of compatibilizer utilized was 10%.
 
 For the micro-compounder, the extrusion temperatures were set at 250°C, 260°C, and 260°C, while the screw speed was maintained at 100 rpm. These temperature conditions were selected to ensure material melting without causing degradation. The passage through the extruder time was carefully measured using a chronometer and was set at 1 minute, 2.2 minutes, and 5 minutes to explore the impact of residence time on the compatibilization process. Subsequently, the extrudates were injected into the mold by an injection machine operating at 260°C, with the mold temperature held at 40°C.  Conversely, the ternary blends were directly produced through Fused Granular Fabrication (FGF) printing. The residence time during extrusion within the machine was experimentally determined to be 2.2 minutes. Detailed printing parameters can be found in Table 1 for reference
 
@@ -147,7 +147,7 @@ table_1 %>%
 
 ##Characterization Methods
 
-The injected and printed samples were characterized using different methods, as summarized in table 2. Previos chemical and thermal characterization of net materials was carry out.
+The injected and printed samples were characterized using different methods, as summarized in table 2. Previous chemical and thermal characterization of net materials was carry out.
 
 ```{r}
 #| label: table1
@@ -173,7 +173,7 @@ Binary and ternary blends tested for tensile properties according to the ISO 527
 Printed and injected specimens were tested for impact properties according the ISO 179-1 standard on specimen 1eAb in a Instron ceast 9050 instrumented impact hammer 7.5J. Measurements were carry out on ten different specimens for each formulation chosen. Results were analysed using excel and Origing Pro8
 ### Fourier-transform infrared spectroscopy --FTIR--
 
-A Bruker IFS 66 spectrophotometer was used for IR measurement. Each spectrum have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance. Baseline correction, and normalitation were carried out in the softawere OrigingPro  8.
+A Bruker IFS 66 spectrophotometer was used for IR measurement. Each spectrum have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance. Baseline correction, and normalization were carried out in the softawere OrigingPro 8.
 
 ### Modulated Differential scanning calorimetry --mDSC--
 

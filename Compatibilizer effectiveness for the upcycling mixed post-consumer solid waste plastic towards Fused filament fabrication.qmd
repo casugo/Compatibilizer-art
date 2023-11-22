@@ -177,8 +177,8 @@ A Bruker IFS 66 spectrophotometer was used for IR measurement. Each spectrum hav
 
 ### Modulated Differential scanning calorimetry --mDSC--
 
-  Modulated differential scanning calorimetry analysis were performed with a... operating under air atmosphere at heating rate of $10~°C/min$ and cooling rate $5~°C/min \pm1. For printed and injected samples, a small section was cut from the tensile bar. Net polymers, binary and thernary blends were evaluated using three cycles: first heating from 20°C to 300 °C, cooling to 20°C and reheating to 300°C for rPET. The rHDPE sample was analyzed following similar cycles but with the minimum temperature set at -70 °C and maximum temperature set at 210°C. finally, for the binary and ternary blends with temperatures from -70 to 300°C.
-   The first heating was made to erase the thermal history of the sample. The measurements of net materials correspond to the secong melting curve while for blends the first melting curve. 
+  Modulated differential scanning calorimetry analysis were performed with a... operating under air atmosphere at heating rate of $10~°C/min$ and cooling rate $5~°C/min \pm1. For printed and injected samples, a small section was cut from the tensile bar. Net polymers, binary and ternary blends were evaluated using three cycles: first heating from 20°C to 300 °C, cooling to 20°C and reheating to 300°C for rPET. The rHDPE sample was analyzed following similar cycles but with the minimum temperature set at -70 °C and maximum temperature set at 210°C. finally, for the binary and ternary blends with temperatures from -70 to 300°C.
+The first heating was made to erase the thermal history of the sample. The measurements of net materials correspond to the second melting curve while for blends the first melting curve. 
 The degree of crystallinity (Xc) was calculated from the area under the melting peaks as expressed in equation (1) [@taghavi2018; @pan2020]:
 
 $$
@@ -204,6 +204,19 @@ Quantitative analysis of the obtained images was performed using python software
 # Results and discussion 
 The results and discussion section are organized as follow: first a macroscopic analysis of the mechanical properties of the blends followed by a microscopic evaluation. 
 ## Mechanical analysis --Tensile test-- 
+
+Within the framework of the compativilization process, specifically in the realm of reactive extrusion, the temporal extent of the reaction is intricately connected to the duration necessary of the material to traverse the extruder [@gao199]. To evaluate the potential impact of residence time on the mechanical properties of the binary and ternary blends , a study was conducted utilizing  a micro-compounder. Three specific residence intervals were investigated: 1 minute, 5 minutes, and 2.2 minutes The overall observation of the results shows that specimenes without compatibilizers consistenly exhibit the maximum tensile strength, regardless of the period of time in the compounder[@Fig-1].
+[@Fig-2]
+
+
+![Tensile Strength](figures/Fig_1_Tensile_strength.png){#fig-1 width="90%"}
+
+
+
+![Young's Modulus](figures/Fig_2_Young's Modulus.png){#fig-2 width="90%"}
+
+
+
 ## Mechanical analysis --Charpy test-- 
 ## Chemical analysis --FTIR--
 ## Thermal analysis -- mDSC--

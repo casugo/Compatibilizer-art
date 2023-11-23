@@ -214,10 +214,17 @@ Within the framework of the compativilization process, specifically in the realm
 
 
 ![Young's Modulus](figures/Fig_2_Young's Modulus.png){#fig-2 width="90%"}
+In average, the inclusion of SEBS in the specimens resulted in a lower modulus of toughness, around 23 ± 6.4% lower than the non-compatibilized counterparts. This decrease in modulus indicates a softer material characteristic, which is consistent with the rubber nature of SEBS. 
 
+
+
+![Tensile toughness](figures/Fig_3_Tensile_toughness.png){#fig-3 width="90%"}
+
+* 
 
 
 ## Mechanical analysis --Charpy test-- 
+
 ## Chemical analysis --FTIR--
 ## Thermal analysis -- mDSC--
 ## Thermal analysis --TGA--

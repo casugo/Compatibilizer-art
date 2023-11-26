@@ -150,7 +150,7 @@ table_1 %>%
 The injected and printed samples were characterized using different methods, as summarized in table 2. Previous chemical and thermal characterization of net materials was carry out.
 
 ```{r}
-#| label: table1
+#| label: table2
 #| tbl-cap: "Summary of the samples preparation and characterization test"
 
 library(knitr)
@@ -205,22 +205,46 @@ Quantitative analysis of the obtained images was performed using python software
 The results and discussion section are organized as follow: first a macroscopic analysis of the mechanical properties of the blends followed by a microscopic evaluation. 
 ## Mechanical analysis --Tensile test-- 
 
-Within the framework of the compativilization process, specifically in the realm of reactive extrusion, the temporal extent of the reaction is intricately connected to the duration necessary of the material to traverse the extruder [@gao199]. To evaluate the potential impact of residence time on the mechanical properties of the binary and ternary blends , a study was conducted utilizing  a micro-compounder. Three specific residence intervals were investigated: 1 minute, 5 minutes, and 2.2 minutes The overall observation of the results shows that specimenes without compatibilizers consistenly exhibit the maximum tensile strength, regardless of the period of time in the compounder[@Fig-1].
-[@Fig-2]
+Within the framework of the compatibilization process, specifically in the realm of reactive extrusion, the temporal extent of the reaction is intricately connected to the duration necessary of the material to traverse the extruder [@gao199]. To evaluate the potential impact of residence time on the mechanical properties of the binary and ternary blends, a study was conducted utilizing  a micro-compounder. Three specific residence intervals were investigated: 1 minute, 5 minutes, and 2.2 minutes Mean results of the mechanical properties are shown in table 3.
 
+```{r}
+#| label: table3
+#| tbl-cap: "Mean vamlues of mechanical properties of injected and printing samples"
+
+library(knitr)
+table_3 <- read_excel("tables/tables.xlsx", sheet="Table3")
+table_3 %>% 
+   kbl(booktabs = T) %>% kable_styling(latex_options = c("striped"),font_size = 8)
+```
 
 ![Tensile Strength](figures/Fig_1_Tensile_strength.png){#fig-1 width="90%"}
+
+- In general, in the absence of compatibilizer, specimens consistently demostrated maximum tensile strength, regardless of the residence duration, with mean values of 51.3, 47, and 49.1 MPa for one, two, and five minutes, respectively (refer to Table 3).
+
+- Furthermore, when considering the entire set of samples, samples treated with 1650 as compatibilizer exhibited the lowest tensile strength and a more widely dispersed results,except for 1 min residence time displaying 10.5% more than reactive compatibizer.
+
+- In the study, it was seen that the performance of the 1652 sample was generally superior, with the exception of a specific instance (2 min) where it showed similar results (37.2 +-12.8 MPa)to the reactive compatibilizer at 38.1 +- 3.1 MPa (as indicated in Table 3). Notably, at the five-minute mark, 1652 exhibited a 17.75% higher tensile strength than the reactive compatibilizer, however with increased variability (refer to Table 3).
+
+- Samples treated with the reactive compatibilizer c1010 did not display significant alterations in strength when the duration of time was modified, maintaining a median strength value of 37.4 ± 1.5 MPa and these specimens did not exhibit rupture in response to compativilization. [@Fig-1]
 
 
 
 ![Young's Modulus](figures/Fig_2_Young's Modulus.png){#fig-2 width="90%"}
-In average, the inclusion of SEBS in the specimens resulted in a lower modulus of toughness, around 23 ± 6.4% lower than the non-compatibilized counterparts. This decrease in modulus indicates a softer material characteristic, which is consistent with the rubber nature of SEBS. 
+- In average, the incorporation of SEBS into the specimens led to a reduction in the Young's modulus, with a decrease of approximately 23 ± 6.4% compared to the non-compatibilized counterparts. The observed drop in modulus is indicative of a softer material property, which aligns with the rubber-like nature of SEBS. 
 
+The tensile test and Young's modulus follow a similar pattern, as depicted in [@Fig-2]. However, Young's modulus displayed minimal variation across all time periods. On average, 1650 and 1010 demonstrated similar results, suggesting comparable levels of Young's modulus. In contrast, 1652 exhibited a significant increase in rigidity, showing a notable 15% rise in Young's modulus.
 
 
 ![Tensile toughness](figures/Fig_3_Tensile_toughness.png){#fig-3 width="90%"}
+- Although samples without compatibilizers exhibit higher tensile stength and rigidity, an examination of tensile toughness [@Fig-3] reveals that non-compatibilized specimens and those treated with 1650 experienced immediate rupture and lacked plastic deformation. contrary to 1652 and 1010 samples, that exhibed plastic deformation without rupture excepting for 1652 at min where all the  
+Moreover, the 1010-treated samples exhibited substantially higher deformations at specific time intervals – a 2205.06% increase at 1.2 minutes and a 422.6% increase at 5 minutes compared to the non-compatibilized specimens.
 
-* 
+
+
+can be observed that non-compatibilized specimens and 1650 samples suffered inmediate rupture and did suffer plastiwque deformation contrary to 1652 and 1010 that suffered plastique deformation with out rupture. results show that 1010 sufferer higher deformation 1354.4% , 2205.06, 422..6% higer for 1.2.5 min compered with the non-compatibilezed ones.
+
+
+in the material where sesimenes without and 1650 sufer inmediate rupr=ture while comp 1652 and 1010 exihibit deformation 
 
 
 ## Mechanical analysis --Charpy test-- 

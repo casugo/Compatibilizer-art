@@ -236,16 +236,8 @@ The tensile test and Young's modulus follow a similar pattern, as depicted in [@
 
 
 ![Tensile toughness](figures/Fig_3_Tensile_toughness.png){#fig-3 width="90%"}
-- Although samples without compatibilizers exhibit higher tensile stength and rigidity, an examination of tensile toughness [@Fig-3] reveals that non-compatibilized specimens and those treated with 1650 experienced immediate rupture and lacked plastic deformation. contrary to 1652 and 1010 samples, that exhibed plastic deformation without rupture excepting for 1652 at min where all the  
-Moreover, the 1010-treated samples exhibited substantially higher deformations at specific time intervals – a 2205.06% increase at 1.2 minutes and a 422.6% increase at 5 minutes compared to the non-compatibilized specimens.
-
-
-
-can be observed that non-compatibilized specimens and 1650 samples suffered inmediate rupture and did suffer plastiwque deformation contrary to 1652 and 1010 that suffered plastique deformation with out rupture. results show that 1010 sufferer higher deformation 1354.4% , 2205.06, 422..6% higer for 1.2.5 min compered with the non-compatibilezed ones.
-
-
-in the material where sesimenes without and 1650 sufer inmediate rupr=ture while comp 1652 and 1010 exihibit deformation 
-
+- Although samples without compatibilizers exhibit higher tensile stength and rigidity, an examination of tensile toughness [@Fig-3] reveals that non-compatibilized specimens and those treated with 1650 experienced immediate rupture and lacked plastic deformation. contrary to 1652 and 1010 samples, that exhibed plastic deformation without rupture excepting for 1652 at 2.2 min where all the samples. this depectisd the brittle-ductil trancition caused by the addition of reactive SEBS and MA 
+-Moreover, the 1010-treated samples exhibited substantially higher deformations at specific time intervals – a 1354.4% increase at 1 min, 2205.06% increase at 2.2 minutes and a 422.6% increase at 5 minutes compared to the non-compatibilized specimens.
 
 ## Mechanical analysis --Charpy test-- 
 

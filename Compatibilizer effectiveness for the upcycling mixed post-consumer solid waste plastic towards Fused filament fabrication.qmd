@@ -171,6 +171,7 @@ Binary and ternary blends tested for tensile properties according to the ISO 527
 #### Charpy test 
 
 Printed and injected specimens were tested for impact properties according the ISO 179-1 standard on specimen 1eAb in a Instron ceast 9050 instrumented impact hammer 7.5J. Measurements were carry out on ten different specimens for each formulation chosen. Results were analysed using excel and Origing Pro8
+
 ### Fourier-transform infrared spectroscopy --FTIR--
 
 A Bruker IFS 66 spectrophotometer was used for IR measurement. Each spectrum have been recorded in the range of $4000~cm^{-1}$ to $375~cm{-1}$ in a resonance. Baseline correction, and normalization were carried out in the softawere OrigingPro 8.
@@ -247,6 +248,7 @@ In order to conduct a comparative analysis between the conventional blending met
 ![A) Tensile Strength, B) Young's Modulus, C) Tensile Toughness of  Printing and Injected samples with 2.2 min residence time ](figures/Fig_4_PrintvsInj.png){#fig-4 width="90%"}
 - The injected samples demonstrated a notable increase in both tensile strength and Young's modulus, exhibiting enhancements ranging between 35% to 50% and 5% to 14%, respectively, when compared to the printed samples.
 
+- Based on the tensile toughness, it's evident that most samples experienced immediate rupture, except for those treated with 1652 and 1010 compatibilizers. Interestingly, in the printed samples, rupture occurred immediately regardless of the added compatibilizer, indicating a need for improved processes or parameters.
 
 
 ## Mechanical analysis --Charpy test-- 
@@ -254,11 +256,32 @@ In order to conduct a comparative analysis between the conventional blending met
 To gain deeper insights into the mechanical properties, Charpy tests were conducted on binary and ternary blends comprising both printed and injected samples
 
 ![Impact test of Printing and Injected samples with 2.2 min residence time ](figures/Fig_5_Impact_strength.png){#fig-5 width="90%"}
+The impact strength results (table 3)indicate variability based on the type of compatibilizer used and there are notable differences between the printed and injected samples.
 
-Figure 5 reveals the repeatability of the printed samples are generally higher compared to the injected ones, except for the printed specimen with C1010 compatibilizer. Despite having the highest impact strength, the printed with C1010 sample exhibit significant variability, unlike the corresponding injected sample which showed the shortest . Both the injected and printed G-1652 ternary blends display relatively higher median values compared to other samples. Furthermore, the incorporation of G1652 compatibilizer enhances the impact strength by ~24% and ~30 % for injected and printed samples, respectively, when compared to samples without compatibilization. The difference observed between compatibilizers can be explained by the high mobility of g-1652 polymer chains due to its lower molar mass. This high mobility enable a better dispersion of HDPE in PET, improving the mechanical properties.
+-Among the printed samples, the impact strength consistently increased with the addition of different compatibilizers, with C1010 exhibiting the highest average impact strength of 1.5 ± 0.6 KJ/m^2, albeit with higher variation. 
 
+- Comparing the injected specimens to the printed ones, it's intriguing to note a less consistent trend. G1652 showed the highest impact strength at 1.1 ± 0.4 KJ/m^2, whereas C1010 displayed less variation in results.
+
+-Notably, the highest impact strength observed in the printed samples is approximately 36.56% higher than the highest impact strength in the injected samples.
+
+-Among the overall results of the printed specimens, the inclusion of C1010 demonstrated a remarkable increase of 123.65% compared to the non-compatibilized sample. Conversely, the impact of the type of compatibilizer used was not significantly influential in the injected samples. 
+
+
+Regarless the variation and inconsistencies in the results of the mechanical tests, it's evident that compatibilizers 1652 and C1010 were notably effective. The disparity observed among compatibilizers can be attributed to specific factors.
+
+The higher mobility of g-1652 polymer chains, owing to its lower molar mass, facilitated a more effective dispersion of HDPE in PET. This improved the mechanical properties by enhancing the interfacial interaction between the materials. Conversely, MA in C1010 enabled the reaction between the hydroxyl ends of the PET molecules, leading to an enhancement in the mechanical properties.
+
+In essence, the distinct mechanisms of action—enhanced dispersion and chemical interaction—underlie the effectiveness of g-1652 and C1010, respectively, in improving the mechanical properties of the blend of injected samples.The di,inished propertis observed in the printing samples can be attributed to several factors, including the limitations inherent in the single-screw system [Look for ref], inadequate mixing time[], suboptimal printing parameters[], and inherent constrains of the 3D printing process[]
+
+-Printing specimens still depicting brittle behaviour
 
 ## Chemical analysis --FTIR--
+
+-
+
+
+
+
 ## Thermal analysis -- mDSC--
 ## Thermal analysis --TGA--
 ## Rehology 

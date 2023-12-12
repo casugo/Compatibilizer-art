@@ -273,11 +273,18 @@ The higher mobility of g-1652 polymer chains, owing to its lower molar mass, fac
 
 In essence, the distinct mechanisms of action—enhanced dispersion and chemical interaction—underlie the effectiveness of g-1652 and C1010, respectively, in improving the mechanical properties of the blend of injected samples.The di,inished propertis observed in the printing samples can be attributed to several factors, including the limitations inherent in the single-screw system [Look for ref], inadequate mixing time[], suboptimal printing parameters[], and inherent constrains of the 3D printing process[]
 
--Printing specimens still depicting brittle behaviour
+-Printing specimens still depicting brittle behavior
 
 ## Chemical analysis --FTIR--
 
--
+We analysed the possible compatibilization mechanism for physical and reactive compatibilizer via FTIR (@Fig-6). 
+
+- The peaks in net PEt makes difficut to see the changes in the characteristic peak of MA  C-O-C 
+
+![FTIR spectra revealing compatibilization mechanism. (a) Printed and injected samples with and without G-1652 Compatbilizer in region from 2000cm^-1 to 1000cm^-1.(b)Printed and injected samples with and without C-1010 Compatbilizer in region from 2000cm^-1 to 1000cm^-1 ](figures/Fig_6_FTIR.png){#fig-6 width="90%"}
+![[FTIR spectra revealing compatibilization mechanism. (a) Printed and injected samples with and without C1010 Compatbilizer in region from 2000cm^-1 to 1000cm^-1.(b)Printed and injected samples with and without C-1010 Compatbilizer in region from 2000cm^-1 to 1000cm^-1 ](figures/Fig_7_FTIR_1010.png){#fig-7 width="90%"}
+![Impact test of Printing and Injected samples with 2.2 min residence time ](figures/Fig_8_FTIR_1652.png){#fig-8 width="90%"}
+
 
 
 
@@ -285,6 +292,10 @@ In essence, the distinct mechanisms of action—enhanced dispersion and chemical
 ## Thermal analysis -- mDSC--
 ## Thermal analysis --TGA--
 ## Rehology 
+
+The 
+
+
 ## Morphology analysis --SEM--
 
 #conclusion and future work
